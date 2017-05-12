@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Javascript</title>
+  <script>
+	 //function, so we can call it as many time as we want
+	 //predefined, this like a proc in mainframe pl1
+	 function sayHello(who){
+	   document.write("Hello" + ", " + who);
+	   //who is a variable that when u call a function
+	 }
+  </script>
+ </head>
+ <body>
+   <script>
+     document.write("Hello, World!");
+	 document.write("<br>");
+	 var words="Hello world variable"; //using variable
+	 var anotherword = " another word";
+	 var sentence = words + anotherword; //concat string variables
+	 document.write(sentence);
+	 document.write("<br>");
+	 document.write(words);
+	 document.write("<br>");
+	 var leng = words.length; //length property of string
+	 document.write(leng);
+	 document.write("<br>");
+	 var substr = words.substring(0,5);
+	 document.write(substr);
+	 //method is input/output
+	 //whereas property is characteristics of an object
+	 //object is your variable
+	 
+	 //writing arrays
+	 //sample1
+	 document.write("<br>");
+	 var a = new Array(3);
+	 a[0] = "dog";
+	 a[1] = 65;
+	 a[2] = true;
+	 document.write(a[0]);
+	 //sample2
+	 var b = new Array("cat",64,true);
+	 document.write(b[0]);
+	 //sample3
+	 var c = ["pig",64,true];
+	 document.write(c[0]);
+	 
+	 document.write("<br>");
+	 //now lets call our function
+	 sayHello("Kat");
+	 
+	 //flow logic
+	 document.write("<br>");
+	 var flow = 12;
+	 if (flow==10){
+	   alert(flow + " sample pop up alert"); //popup box
+	 } else {
+	   alert("the condition was not satisfied.");
+	 }
+	 document.write("<br>");
+	 //for loop
+	  for (i=0;i<=3;i++){
+	    document.write("the value of i is "+i+"<br>");
+	  }
+   </script>
+ </body>
+</html>
